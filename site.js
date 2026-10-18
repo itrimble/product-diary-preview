@@ -47,7 +47,7 @@
   function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function open(items) {
     out.innerHTML = items.length
-      ? items.map(function (r, i) { return '<li><a href="' + new URL(r.u.slice(1), document.currentScript.src).href + '" data-i="' + i + '"><strong>' + esc(r.t) + '</strong><span>' + esc(r.p) + " · " + esc(r.c) + "</span></a></li>"; }).join("")
+      ? items.map(function (r, i) { return '<li><a href="' + r.u + '" data-i="' + i + '"><strong>' + esc(r.t) + '</strong><span>' + esc(r.p) + " · " + esc(r.c) + "</span></a></li>"; }).join("")
       : '<li class="none">Nothing matches.</li>';
     out.hidden = false; active = -1;
   }
@@ -63,7 +63,7 @@
   }
   function ensure(cb) {
     if (idx) return cb();
-    fetch(new URL("search.json", document.currentScript.src).href).then(function (r) { return r.json(); }).then(function (j) { idx = j; cb(); }).catch(function () {});
+    fetch("/search.json").then(function (r) { return r.json(); }).then(function (j) { idx = j; cb(); }).catch(function () {});
   }
   q.addEventListener("focus", function () { ensure(function () {}); });
   q.addEventListener("input", function () { ensure(run); });

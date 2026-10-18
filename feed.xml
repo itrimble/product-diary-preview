@@ -6,7 +6,16 @@
   <atom:link href="https://blog.remnantsecurity.com/feed.xml" rel="self" type="application/rss+xml"/>
   <description>What changed across the projects, day by day.</description>
   <language>en</language>
-  <lastBuildDate>Sat, 17 Oct 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 18 Oct 2026 00:00:00 GMT</lastBuildDate>
+  <item>
+    <title>Learning to Sell, part 1: I spent $1,010 on AI helpers. So far they have sold two copies of a puzzle game.</title>
+    <link>https://blog.remnantsecurity.com/learning-to-sell/2026-10-18/</link>
+    <guid isPermaLink="true">https://blog.remnantsecurity.com/learning-to-sell/2026-10-18/</guid>
+    <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+    <category>Learning to Sell</category>
+    <category>Learning to Sell</category>
+    <description>The first entry in a public tracker of whether the assistants that build my apps and books can earn back what they cost, starting from two paid sales, no ad spend and a lot of numbers nobody can see yet.</description>
+  </item>
   <item>
     <title>I turned my old Proxmox PC into a headless AI box. Then I tried to prove its memory wasn&#39;t broken.</title>
     <link>https://blog.remnantsecurity.com/omarchy-ai-node/2026-10-17/</link>
@@ -447,15 +456,6 @@
     <category>Games</category>
     <category>QixForge</category>
     <description>QixForge now explains why you lost a life, plays properly sideways, and starts on a dark screen.</description>
-  </item>
-  <item>
-    <title>BookForge pipeline — 2026-09-28</title>
-    <link>https://blog.remnantsecurity.com/bookpipeline/2026-09-28/</link>
-    <guid isPermaLink="true">https://blog.remnantsecurity.com/bookpipeline/2026-09-28/</guid>
-    <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-    <category>Books and Writing</category>
-    <category>BookForge pipeline</category>
-    <description>The BookForge Mac app got a consistent look and stopped claiming a book had no chapters while it loaded.</description>
   </item>
 </channel>
 </rss>
